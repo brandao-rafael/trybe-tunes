@@ -1,0 +1,229 @@
+body {
+  color: rgb(64, 64, 64);
+  background-color: rgb(209, 209, 209);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.login-control, .login-title {
+  margin: 25px;
+}
+
+.loading {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.loading-content {
+  color: rgb(64, 64, 64);
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-info {
+  background-color: rgb(3,52,45);
+  color: rgb(209, 209, 209);
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  align-items: baseline;
+}
+
+.user-name-header {
+  background-color: rgb(209, 209, 209);
+  border-radius: 50px;
+  color: rgb(63, 63, 63);
+  padding: 10px;
+}
+
+.user-name-header p {
+  margin: 0;
+}
+
+.icon-logo {
+  height: 25px;
+  margin-left: 10px;
+}
+
+.header-nav-link {
+  background-color: white;
+  border: solid 1px rgb(64, 64, 64);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 60px;
+}
+
+.link {
+  color: rgb(64, 64, 64);
+  text-decoration: none;
+  transition: all 300ms ease-in;
+}
+
+.link:hover {
+  color: rgb(3,52,45);
+  transition: all 300ms ease-in;
+}
+
+.page-search-controls {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+  padding: 0 100px;
+}
+
+.search-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 60px;
+}
+
+.album-item {
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+  padding: 15px;
+  width: 23%;
+}
+
+.album-img {
+  margin-right: 5px;
+}
+
+.album-name {
+  font-size: 18px;
+  margin: 5px
+}
+
+.title-album-item {
+  color: rgb(3,52,45);
+  text-align: center;
+}
+
+.none-album {
+  text-align: center;
+}
+
+.collection-image-album {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 15px;
+  width: 150px;
+}
+
+.album-title {
+  margin: 30px;
+  text-align: center;
+}
+
+.music-card-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto;
+}
+
+.link-to-album {
+  border: solid 1px rgb(38, 57, 77);
+  border-radius: 5px;
+  color: rgb(38, 57, 77);
+  margin: 5px;
+  font-weight: 400;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: all 500ms ease;
+  float: right;
+}
+
+.link-to-album:hover {
+  background-color: rgb(38, 57, 77);
+  color: white;
+  font-weight: 600;
+  transition: all 500ms ease;
+}
+
+.album-cards-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.favorites-title {
+  text-align: center;
+  margin: 15px;
+}
+
+.page-favorites {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 25px;
+}
+
+.profile-container {
+  text-align: center;
+}
+
+.profile-container img {
+  border-radius: 5px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  height: 150px;
+  margin: 25px;
+}
+
+.profile-container p {
+  margin: 25px
+}
+
+.edit-profile-link {
+  color: rgb(3,52,45);
+  text-decoration: none;
+}
+
+.edit-profile-link:hover {
+  color: white;
+}
+
+.edit-profile-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.edit-profile-container label, .edit-profile-container button {
+  margin: 15px auto;
+  width: 50%;
+}
+
+@media only screen and (max-width: 450px) {
+  .search-container {
+    flex-direction: column;
+  }
+
+  .page-search-controls {
+    padding: 15px;
+  }
+
+  .album-item {
+    width: 100%;
+  }
+
+  .edit-profile-container label {
+    width: 80%;
+  }
+  
+}
