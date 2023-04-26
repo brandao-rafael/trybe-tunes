@@ -51,6 +51,8 @@
 
 </details>
 
+https://brandao-rafael.github.io/trybe-tunes/
+
 # Requisitos
 
 :warning: **PULL REQUESTS COM ERROS DE LINTER NÃO SERÃO AVALIADAS.** :warning:
