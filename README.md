@@ -1,29 +1,9 @@
 # Boas-vindas ao repositório do projeto Trybetunes!
 
-Para realizar o projeto, atente-se a cada passo descrito a seguir e, se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-
-# Termos e acordos
-
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta e do Manual da Pessoa Estudante da Trybe.
-
-# Entregáveis
-
 <details>
-  <summary><strong>🤷🏽‍♀️ Como entregar</strong></summary><br />
+  <summary><strong>👨‍💻 O que foi desenvolvido</strong></summary><br />
 
-  Para entregar o seu projeto você deverá criar um *Pull Request* neste repositório.
-
-  Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://app.betrybe.com/course/4d67f5b4-34a6-489f-a205-b6c7dc50fc16/) e nosso [Blog - Git & GitHub](https://blog.betrybe.com/tecnologia/git-e-github/) sempre que precisar!
-</details>
-
-<details>
-  <summary><strong>👨‍💻 O que deverá ser desenvolvido</strong></summary><br />
-
-  Neste projeto você irá criar o TrybeTunes, uma aplicação capaz de reproduzir músicas das mais variadas bandas e artistas, criar uma lista de músicas favoritas e editar o perfil da pessoa usuária logada. Essa aplicação será capaz de:
-
-  - Fazer login;
+  - Tela login;
   - Pesquisar por uma banda ou artista;
   - Listar os álbuns disponíveis dessa banda ou artista;
   - Visualizar as músicas de um álbum selecionado;
@@ -32,17 +12,10 @@ Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta 
   - Ver a lista de músicas favoritas;
   - Ver o perfil da pessoa logada;
   - Editar o perfil da pessoa logada;
-
-  ### Protótipo do projeto
-  Você pode acessar um protótipo no link abaixo:
-
-  https://www.figma.com/file/BDQgAJvOe4KNUjmrYh5t68/TrybeTunes-Figma
 </details>
 
 <details>
   <summary><strong>:memo: Habilidades</strong></summary><br />
-
-Neste projeto, verificamos se você é capaz de:
 
 - Fazer requisições e consumir dados vindos de uma `API`;
 
@@ -60,22 +33,11 @@ Neste projeto, verificamos se você é capaz de:
 </details>
 
 <details>
-  <summary><strong>🗓 Data de Entrega</strong></summary><br />
-  
-  * Este projeto é individual;
-  * São `3` dias de projeto;
-  * Data para entrega final do projeto: `10/08/2022 14:00`.
-
-</details>
-
-# Orientações
-
-<details>
-  <summary><strong>‼️ Antes de começar a desenvolver</strong></summary><br />
+  <summary><strong>‼️ Executando o projeto</strong></summary><br />
 
   1. Clone o repositório
 
-  - Use o comando: `git clone git@github.com:tryber/sd-023-a-project-trybetunes.git`.
+  - Use o comando: `git clone git@github.com:brandao-rafael/trybe-tunes.git`.
   - Entre na pasta do repositório que você acabou de clonar:
     - `cd sd-023-a-project-trybetunes`
 
@@ -83,247 +45,10 @@ Neste projeto, verificamos se você é capaz de:
 
   - `npm install`.
   
-  3. Crie uma branch a partir da branch `master`
+  3. Inicie a aplicação
+  
+  - `npm start`
 
-  - Verifique que você está na branch `master`
-    - Exemplo: `git branch`
-  - Se não estiver, mude para a branch `master`
-    - Exemplo: `git checkout master`
-  - Agora crie uma branch à qual você vai submeter os `commits` do seu projeto
-    - Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    - Exemplo: `git checkout -b joaozinho-sd-023-a-project-trybetunes`
-
-  4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-
-  - Verifique que as mudanças ainda não estão no _stage_
-    - Exemplo: `git status` (deve aparecer listada a pasta _joaozinho_ em vermelho)
-  - Adicione o novo arquivo ao _stage_ do Git
-    - Exemplo:
-      - `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-      - `git status` (deve aparecer listado o arquivo _joaozinho/README.md_ em verde)
-  - Faça o `commit` inicial
-    - Exemplo:
-      - `git commit -m 'iniciando o projeto x'` (fazendo o primeiro commit)
-      - `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-  5. Adicione a sua branch com o novo `commit` ao repositório remoto
-
-  - Usando o exemplo anterior: `git push -u origin joaozinho-sd-023-a-project-trybetunes`
-
-  6. Crie um novo `Pull Request` _(PR)_
-
-  - Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-023-a-project-trybetunes/pulls)
-  - Clique no botão verde _"New pull request"_
-  - Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-  - Coloque um título para a sua _Pull Request_
-    - Exemplo: _"Cria tela de busca"_
-  - Clique no botão verde _"Create pull request"_
-  - Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-  - **Não se preocupe em preencher mais nada por enquanto!**
-  - Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-023-a-project-trybetunes/pulls) e confira que o seu _Pull Request_ está criado
-
-</details>
-
-<details>
-  <summary><strong>⌨️ Durante o desenvolvimento</strong></summary><br />
-
-  - Faça `commits` das alterações que você fizer no código regularmente
-
-  - Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
-
-  - Os comandos que você utilizará com mais frequência são:
-    1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-    2. `git add` _(para adicionar arquivos ao stage do Git)_
-    3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-    4. `git push -u origin nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-    5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
-
-</details>
-
-<details>
-  <summary><strong>🤝 Depois de terminar o desenvolvimento (opcional)</strong></summary><br />
-
-  Para sinalizar que o seu projeto está pronto para o _"Code Review"_, faça o seguinte:
-
-  - Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
-
-    - No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
-
-    - No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
-
-    - No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-023-a`.
-
-  Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
-
-</details>
-
-<details>
-  <summary><strong>🕵🏿 Revisando um pull request</strong></summary><br />
-
-  Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
-
-</details>
-
-<details>
-  <summary><strong>🎛 Linter</strong></summary><br />
-
-  Para garantir a qualidade do código, vamos utilizar neste projeto os linters `ESLint` e `StyleLint`.
-  Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível
-  e de fácil manutenção! Para rodá-los localmente no projeto, execute os comandos abaixo:
-
-  ```bash
-    npm run lint
-    npm run lint:styles
-  ```
-
-  ⚠️ **PULL REQUESTS COM ERROS DE LINTER NÃO SERÃO AVALIADAS.
-  ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠️
-
-  Em caso de dúvidas, confira o material do course sobre [ESLint e Stylelint](https://app.betrybe.com/course/real-life-engineer/eslint).
-</details>
-
-<details>
-  <summary><strong>🛠 Testes</strong></summary><br />
-
-  Neste projeto utilizamos a [React Testing Library (RTL)](https://testing-library.com/docs/react-testing-library/intro) para execução dos testes.
-
-  Na descrição dos requisitos (logo abaixo) será pedido que seja feita a adição de atributos `data-testid` nos elementos _HTML_. Vamos a um exemplo para deixar evidente essa configuração: se o requisito pedir _"crie um botão e adicione o id de teste (ou `data-testid`) com o valor `my-action`, você pode escrever_:
-
-  ```html
-  <button data-testid="my-action"></button>
-  ```
-
-  ou
-
-  ```html
-  <a data-testid="my-action"></a>
-  ```
-
-  Ou seja, o atributo `data-testid="my-action"` servirá para o React Testing Library (RTL) identificar o elemento e, dessa forma, conseguiremos realizar testes focados no comportamento da aplicação.
-
-  **ATENÇÃO!** Muito cuidado com os nomes especificados nos requisitos! O conteúdo deve ser exatamente igual ao texto descrito no requisito.
-
-  Para verificar a solução proposta, você pode executar todos os testes localmente, basta executar:
-
-  ```bash
-  npm test
-  ```
-
-  ### Dica: desativando testes
-
-  Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é extensa. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `it`. Como o nome indica, esta função "pula" um teste:
-
-  ```js
-  it.skip('Será validado se existe uma página para rotas não mapeadas', () => {
-    renderPath('/not-found');
-
-    expect(screen.getByText('Página não encontrada')).toBeInTheDocument();
-  });
-  ```
-  ![image](skip-image.png)
-
-  Uma estratégia é pular todos os testes no início e ir implementando um teste de cada vez, removendo dele a função `skip`.
-
-  Você também pode rodar apenas um arquivo de teste, por exemplo:
-
-  ```bash
-  npm test 01.LoginPage.test.js
-  ```
-
-  ou
-
-  ```bash
-  npm test 01.LoginPage
-  ```
-
-  Uma outra forma para driblar esse problema é a utilização da função `.only` após o `it`. Com isso, será possível que apenas um requisito rode localmente e seja avaliado.
-
-  ```js
-  it.only('Será validado se existe uma página para rotas não mapeadas', () => {
-    renderPath('/not-found');
-
-    expect(screen.getByText('Página não encontrada')).toBeInTheDocument();
-  });
-  ```
-  ![image](only-image.png)
-
-  ⚠️ **O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?**
-</details>
-
-<details>
-  <summary><strong>:convenience_store: Desenvolvimento </strong></summary><br />
-
-  Nos últimos projetos, por mais que o app tenha sido desenvolvido utilizando múltiplos componentes, o que é uma boa prática, todas as funcionalidades eram acessadas ao mesmo tempo, no mesmo lugar, utilizando apenas uma URL (`localhost:3000`, normalmente). A medida que seus apps se tornarem maiores e mais complexos, isso se tornará inviável. Desta vez, as funcionalidades do app serão agrupadas e organizadas em rotas.
-
-  Uma rota define o que deve ser renderizado na página ao abrí-la. Cada rota está associada a um caminho. O caminho é a parte da URL após o domínio (nome do site, de forma simplificada). Por exemplo, em `www.site.com/projetos/meu-jogo`, o caminho é `/projetos/meu-jogo`. Até agora, todos os apps React que você desenvolveu possuíam somente uma rota, a raíz (`/`).
-
-  Outra diferença importante neste projeto em relação aos anteriores é que você irá consumir e enviar dados para APIs para pesquisar a banda ou artista, recuperar as músicas de cada álbum e salvar as músicas favoritas, além de editar as informações da pessoa logada. Dessa forma, você terá que lidar com requisições assíncronas e promises. Também deverá fazer uso dos métodos de ciclo de vida (lifecycle methods) e de estados para controlar o que é renderizado por seus componentes dependendo do momento em que as requisições se encontram.
-
-  ### Como desenvolver
-
-  Este repositório já contém um template com um App React criado. Após clonar o projeto e instalar as dependências, você deverá completar este template implementando os requisitos listados na seção [Requisitos](#requisitos).
-
-  Também já existe no projeto um diretório `src/services` que contém os arquivos `favoriteSongsAPI.js`, `searchAlbumsAPI.js`, `userAPI.js` e `musicsAPI.js`. Esses arquivos serão responsáveis por lidar com as requisições simuladas que serão usadas durante o desenvolvimento. Entenda mais sobre eles abaixo:
-
-  <details><summary><strong> <code>userAPI.js</code></strong></summary>
-
-  O arquivo `userAPI.js` será utilizado para manipular as informações da pessoa logada, dentro dele estarão as funções para recuperar e atualizar as informações da pessoa usuária, além de criar um novo perfil. Todas essas funções simulam o funcionamento de uma API.
-
-  - Para recuperar as informações da pessoa usuária, utilize a função `getUser`. Ela retornará um objeto com as informações da pessoa logada caso exista.
-  **Atenção:** caso não encontre nenhuma informação da pessoa usuária, a API retornará um objeto vazio.
-
-  - Para criar um novo perfil, utilize a função `createUser`, ela recebe como parâmetro o objeto que contém as informações da pessoa usuária. Esse objeto deverá conter a seguinte estrutura:
-
-  ```javascript
-  {
-    name: '',
-    email: '',
-    image: '',
-    description: '',
-  }
-  ```
-
-  Para atualizar as informações da pessoa logada, utilize a função `updateUser`. Assim como a função anterior, ela também recebe um objeto com as informações que serão atualizadas, esse objeto deve conter a mesma estrutura do anterior.
-  </details>
-
-  <details><summary><strong> <code>searchAlbumsAPI.js</code></strong></summary>
-
-  O arquivo `searchAlbumsAPI.js` contém uma função que faz uma requisição a uma API e retorna os álbuns de uma banda ou artista. Para essa função funcionar, ela recebe como parâmetro uma string, que deve ser o nome da banda ou artista. O retorno dessa função, quando encontra as informações, é um array com cada álbum dentro de um objeto.
-  **Atenção:** caso não encontre nenhuma informação da banda ou artista, a API retornará um array vazio.
-  </details>
-  <details><summary><strong> <code>favoriteSongsAPI.js</code></strong></summary>
-
-  O arquivo `favoriteSongsAPI.js` é responsável por manipular as informações das músicas favoritas. Nele há as funções `getFavoriteSongs`, `addSong` e `removeSong`, que recuperam, adicionam e removem músicas dos favoritos, respectivamente. Assim como nos arquivos anteriores, todas as funções simulam o funcionamento de uma API.
-
-  A função `getFavoriteSongs` retorna um array com as músicas favoritas ou um array vazio, caso não haja nenhuma música.
-
-  A função `addSong` recebe um objeto que representa a música que você quer salvar como favorita e adiciona ao array já existente das músicas que já foram favoritadas.
-
-  A função `removeSong` também recebe um objeto que representa a música que você deseja remover da lista de músicas favoritas.
-
-  **Atenção:** os objetos de música precisam ter a chave `trackId` para que as músicas sejam adicionadas e removidas corretamente.
-  </details>
-  <details><summary><strong> <code>musicsAPI.js</code></strong></summary>
-
-  O arquivo `musicsAPI.js` contém a função `getMusics` que faz uma requisição a uma API e retorna os as músicas de um álbum. Ela recebe como parâmetro uma string, que deve ser o id do álbum. O retorno dessa função, quando encontra as informações, é um array onde o primeiro elemento é um objeto com informações do álbum e o restante dos elementos são as músicas do álbum.
-  **Atenção:** caso não encontre nenhuma informação, a API retornará um array vazio.
-  </details>
-</details>
-
-<details>
-  <summary><strong>🗣 Nos dê feedbacks sobre o projeto!</strong></summary><br />
-
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. 
-**Leva menos de 3 minutos!**
-
-[FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
-
-</details>
-
-<details>
-  <summary><strong>🗂 Compartilhe seu portfólio!</strong></summary><br />
-
-  Você sabia que o LinkedIn é a principal rede social profissional e compartilhar o seu aprendizado lá é muito importante para quem deseja construir uma carreira de sucesso? Compartilhe esse projeto no seu LinkedIn, marque o perfil da Trybe (@trybe) e mostre para a sua rede toda a sua evolução.
 </details>
 
 # Requisitos
@@ -370,24 +95,6 @@ Você deve utilizar o `BrowserRouter` pra criar as rotas da sua aplicação e ca
 Para qualquer outra rota não mapeada, deve ser renderizado um componente chamado `NotFound`. Este componente deve ter uma `div` que envolva todo seu conteúdo e ter o atributo `data-testid="page-not-found"`;
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-  
-  - A rota `/` é uma rota existente e que renderiza um componente com o `data-testid` com valor `page-login`;
-
-  - A rota `/search` é uma rota existente e que renderiza um componente com o `data-testid` com valor `page-search`;
-
-  - A rota `/album/:id` é uma rota existente e que renderiza um componente com o `data-testid` com valor `page-album`;
-
-  - A rota `/favorites` é uma rota existente e que renderiza um componente com o `data-testid` com valor `page-favorites`;
-
-  - A rota `/profile` é uma rota existente e que renderiza um componente com o `data-testid` com valor `page-profile`;
-
-  - A rota `/profile/edit` é uma rota existente e que renderiza um componente com o `data-testid` com valor `page-profile-edit`;
-
-  - Existe uma página para rotas não mapeadas e que renderiza um componente com o `data-testid` com valor `page-not-found`;
-</details>
-
 ---
 
 ## 2. Crie um formulário para identificação
@@ -415,18 +122,6 @@ createUser({ name: "Nome digitado" });
 
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-- Ao navegar para a rota `/`, o input e o botão especificados estão presentes;
-
-- O botão só é habilitado se o input de nome tiver 3 ou mais caracteres;
-
-- Ao clicar no botão habilitado, a função `createUser` da `userAPI` é chamada;
-
-- Ao clicar no botão, a mensagem `Carregando...` é exibida e após a resposta da API acontece o redirecionamento para a rota `/search`.
-</details>
-
 ---
 
 ## 3. Crie um componente de cabeçalho
@@ -441,26 +136,6 @@ createUser({ name: "Nome digitado" });
 
 - Enquanto estiver aguardando a resposta da `getUser`, exiba apenas a mensagem de `Carregando...`.
 </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-- O componente `Header` é renderizado na página `/search`;
-
-- O componente `Header` é renderizado na página `/album/:id`;
-
-- O componente `Header` é renderizado na página `/favorites`;
-
-- O componente `Header` é renderizado na página `/profile`;
-
-- O componente `Header` é renderizado na página `/profile/edit`;
-
-- A função `getUser` é chamada ao renderizar o componente;
-
-- A mensagem de `Carregando...` é exibida ao renderizar o componente e é removida após o retorno da API;
-
-- O nome da pessoa usuária está presente na tela após o retorno da API.
-</details>
 
 ---
 
@@ -481,44 +156,6 @@ createUser({ name: "Nome digitado" });
   * O link que redireciona para a página de exibição de perfil deve estar dentro do componente `Header` e precisa possuir o atributo `data-testid="link-to-profile"`.
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Os links de navegação são exibidos na página de pesquisa;
-  
-  - A navegação entre a página de pesquisa e a página de músicas favoritas ocorre corretamente;
-  
-  - A navegação entre a página de pesquisa e a página de exibição do perfil ocorre corretamente;
-  
-  - Os links de navegação são exibidos na página do álbum;
-  
-  - A navegação entre a página do álbum e a página de pesquisa ocorre corretamente;
-  
-  - A navegação entre a página do álbum e a página de músicas favoritas ocorre corretamente;
-  
-  - A navegação entre a página do álbum e a página de exibição do perfil ocorre corretamente;
-  
-  - Os links de navegação são exibidos na página de músicas favoritas;
-  
-  - A navegação entre a página de músicas favoritas e a página de pesquisa ocorre corretamente;
-  
-  - A navegação entre a página de músicas favoritas e a página de exibição perfil ocorre corretamente;
-  
-  - Os links de navegação são exibidos na página de exibição do perfil;
-  
-  - A navegação entre a página de exibição do perfil e a página de pesquisa ocorre corretamente;
-  
-  - A navegação entre a página de exibição do perfil e a página de músicas favoritas ocorre corretamente;
-  
-  - Os links de navegação são exibidos na página de edição do perfil;
-  
-  - A navegação entre a página de edição do perfil e a página de pesquisa ocorre corretamente;
-  
-  - A navegação entre a página de edição do perfil e a página de músicas favoritas ocorre corretamente;
-  
-  - A navegação entre a página de edição do perfil e a página de exibição do perfil ocorre corretamente.
-</details>
-
 ---
 
 ## 5. Crie o formulário para pesquisar artistas
@@ -535,14 +172,6 @@ Este formulário deve conter um input e um botão para que seja possível pesqui
 
   ![requisito-5](images/requisito5.png)
 </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Ao navegar para a rota `/search`, o input e o botão estão presentes na tela;
-
-  - O botão está habilitado somente se o input de nome tiver 2 ou mais caracteres.
-</details>
 
 ---
 
@@ -589,20 +218,6 @@ Com a estrutura da tela de pesquisa criada, agora é hora de fazer uma requisiç
     * Este link deve redirecionar para a rota `/album/:id`, onde `:id` é o valor da propriedade `collectionId` de cada Álbum da lista recebida pela API.
   </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Ao clicar em `pesquisar`, a requisição é feita usando a `searchAlbumsAPI`;
-
-  - Ao clicar no botão, o texto `Resultado de álbuns de: <artista>` aparece na tela;
-
-  - Ao receber o retorno da API, os álbuns são listados na tela;
-
-  - Caso a API não retorne nenhum álbum, a mensagem `Nenhum álbum foi encontrado` é exibida;
-
-  - Existe um link para cada álbum listado que redirecione para a rota `/album/:id`.
-</details>
-
 ---
 
 ## 7. Crie a lista de músicas do álbum selecionado
@@ -635,16 +250,6 @@ Para tocar o preview, você deve usar a tag `audio` do próprio HTML. Sua implem
   ![requisito-7](images/requisito7.gif)
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-  
-  - Se o serviço de `musicsAPI` está sendo chamado;
-  
-  - Se o nome da banda ou artista e o nome do álbum são exibidos;
-  
-  - Se todas músicas retornadas pela API são listadas.
-</details>
-
 ---
 
 ## 8. Crie o mecanismo para adicionar músicas na lista de músicas favoritas
@@ -666,16 +271,6 @@ Você já consegue listar as músicas dos álbuns. Nessa etapa você poderá mar
   ![requisito-8](images/requisito8.gif)
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - Existe um checkbox para cada música da lista;
-
-  - A função `addSong` é chamada quando algum checkbox é clicado;
-
-  - A mensagem `Carregando...` é exibida após clicar no checkbox e removida depois do retorno da API.
-</details>
-
 ---
 
 ## 9. Faça a requisição para recuperar as músicas favoritas ao entrar na página do Álbum
@@ -693,14 +288,6 @@ Você já consegue listar as músicas dos álbuns. Nessa etapa você poderá mar
   ![requisito-9](images/requisito9.gif)
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - A requisição para `getFavoriteSongs` é feita para recuperar as músicas favoritas;
-
-  - Ao entrar na página, o número de checkboxes marcados como `checked` é correspondente ao número de músicas que já foram favoritadas;
-</details>
-
 ---
 
 ## 10. Faça a requisição para recuperar as músicas favoritas e atualizar a lista após favoritar uma música
@@ -716,14 +303,6 @@ Você já consegue listar as músicas dos álbuns. Nessa etapa você poderá mar
 - Após receber o retorno da função `getFavoriteSongs`, as músicas que já foram favoritadas devem estar com o checkbox marcado como `checked`.
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - A requisição para `getFavoriteSongs` é feita após favoritar uma música;
-
-  - O número de checkboxes marcados como `checked` aumenta quando um checkbox é clicado.
-</details>
-
 ---
 
 ## 11. Crie o mecanismo para remover músicas na lista de músicas favoritas
@@ -736,16 +315,6 @@ Depois de listar e favoritar as músicas de um álbum, você também deve poder 
 
   ![requisito-11](images/requisito11.gif)
 </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-- A função `removeSong` é chamada quando algum checkbox que já esteja marcado é clicado;
-
-- A mensagem `Carregando...` é exibida após clicar no checkbox e removida depois do retorno da API;
-
-- O número de checkboxes marcados como `checked` diminui quando um checkbox marcado é clicado;
-</details>
 
 ---
 
@@ -770,16 +339,6 @@ Depois de listar e favoritar as músicas de um álbum, você também deve poder 
   ![requisito-12](images/requisito12.gif)
 </details><br />
 
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-- A requisição para `getFavoriteSongs` é feita para recuperar as músicas favoritas;
-
-- É exibida a lista de músicas favoritas;
-
-- A lista de músicas favoritas é atualizada ao remover uma música da lista.
-</details>
-
 ---
 
 ## 13. Crie a exibição de perfil
@@ -798,18 +357,6 @@ Depois de listar e favoritar as músicas de um álbum, você também deve poder 
 
   ![requisito-13](images/requisito13.gif)
 </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-- A API `getUser` é usada para recuperar as informações da pessoa logada;
-
-- As informações da pessoa logada são exibidas na tela;
-
-- Foi criado um link para a rota de edição de perfil com o texto `Editar perfil`;
-
-- Ao clicar no link `Editar perfil`, a navegação acontece corretamente.
-</details>
 
 ---
 
@@ -862,21 +409,5 @@ Crie o formulário de edição de perfil dentro do componente <code>ProfileEdit<
 
   ![requisito-14](images/requisito14.gif)
 </details><br />
-
-<details>
-  <summary><strong>O que será verificado</strong></summary><br />
-
-  - É feita a requisição para `getUser` para recuperar as informações da pessoa logada; 
-
-  - O formulário é renderizado já preenchido com as informações da pessoa logada;
-
-  - É possível alterar os valores dos campos;
-
-  - O botão `salvar` é habilitado somente se todos os campos estiverem válidos;
-
-  - As informações são enviadas usando a API `updateUser`;
-
-  - Após salvar as informações a pessoa é redirecionada para a página de exibição de perfil.
-</details>
 
 ---
